@@ -147,6 +147,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+        Caffeinated\Modules\ModulesServiceProvider::class,
+        Centaur\CentaurServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -201,7 +204,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'DingoApi' => Dingo\Api\Facade\API::class,
+        'DingoRoute' => Dingo\Api\Facade\Route::class,
+        'Module' => Caffeinated\Modules\Facades\Module::class,
     ],
 
 ];
